@@ -10,6 +10,7 @@ body {
 	width: 100%;
 	height: 100vh;
 	overflow: scroll;
+	color: #3d5059;
 }
 
 * {
@@ -199,7 +200,7 @@ body {
     max-height: calc(100vh - 150px);
     overflow: auto;
     border-radius: 5px;
-    opacity: 0;
+    display: none;
 }
 
 .cpnSearchBox .contentBox .listSuggests .hotKeyword {
@@ -239,6 +240,7 @@ body {
 
 .option {
 	display: flex;
+	margin-bottom: 42px;
 }
 
 .option .list-option {
@@ -282,7 +284,7 @@ body {
 }
 
 .option .list-option .item .label {
-	font-weight: 500px; 
+	font-weight: 550; 
 	display: flex;
     justify-content: center;
     align-self: center;
@@ -371,14 +373,14 @@ body {
 	transform: translate(50%, -50%) scale(1.3);
 }
 
-.wrapper .list-wrapper .dot-box {
+.dot-box {
 	position: absolute;
 	bottom: 7px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.wrapper .list-wrapper .dot-box i {
+.dot-box i {
 	color: #c4cacd;
 	font-size: 12px;
 	padding: 0 5px;
@@ -386,6 +388,142 @@ body {
 	user-select: none;
 }
 
-.wrapper .list-wrapper .dot-box i:hover {
+.dot-box i:hover {
 	color: #c81526;
+}
+
+.hotCollections {
+	padding: 0 15px;
+	margin-bottom: 42px;
+}
+
+.hotCollections .head {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.hotCollections .head .icon {
+	margin-right: 7px;
+}
+
+.hotCollections .head .icon i {
+	font-size: 30px;
+	color: #f9ca24;
+}
+
+.hotCollections .head .label {
+	flex: 1;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-weight: 550;
+}
+
+.hotCollections .head .btnViewMore {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #0096f2;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.hotCollections .head .btnViewMore p {
+	transition: .4s;
+}
+
+.hotCollections .head .btnViewMore:hover p{
+	padding-right: 10px;
+}
+
+.hotCollections .head .btnViewMore i {
+	margin: 5px;
+}
+
+.hotCollections .list-item {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 20px;
+	position: relative;
+}
+
+.hotCollections .list-item .item {
+	border: 1px solid #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	box-shadow: 0px 0px 5px #7d7d7d;
+}
+
+.hotCollections .list-item .item:hover {
+	border: 1px solid #c81526;
+	box-shadow: 0px 0px 5px #c81526;
+}
+
+.hotCollections .list-item .item .image {
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.hotCollections .list-item .item .image img {
+	width: 100%;
+	height: 175px;
+}
+
+.hotCollections .list-item .item .image p {
+	position: absolute;
+	color: #fff;
+	top: 10px;
+	padding: 5px;
+}
+.hotCollections .list-item .item .image label:before {
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	width: 50px;
+	height: 25px;
+	background-color: #c81526;
+	transform: skew(-10deg);
+}
+
+.hotCollections .list-item .item .label {
+	text-align: center;
+	font-weight: 500;
+	color: inherit;
+	padding: 5px;
+}
+
+.hotCollections .list-item .item .content i {
+	padding: 0 10px;
+}
+
+.hotCollections .list-item .item .content .info {
+	display: flex;
+	align-items: center;
+	color: #cc2534;
+	padding-bottom: 5px;
+}
+
+.hotCollections .list-item .item .content .location {
+	display: flex;
+	align-items: center;
+	color: #5b6b73;
+	padding-bottom: 5px;
+}
+
+.hotCollections .list-item:hover .arrow-left-arrow {
+	opacity: 1;
+}
+
+.hotCollections .list-item:hover .arrow-right-arrow {
+	opacity: 1;
+}
+
+.hotCollections .list-item .dot-box {
+	bottom: -30px;
 }
