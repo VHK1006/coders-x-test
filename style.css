@@ -397,23 +397,23 @@ body {
 	margin-bottom: 42px;
 }
 
-.hotCollections .head {
+.head {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 15px;
 }
 
-.hotCollections .head .icon {
+.head .icon {
 	margin-right: 7px;
 }
 
-.hotCollections .head .icon i {
+.head .icon i {
 	font-size: 30px;
 	color: #f9ca24;
 }
 
-.hotCollections .head .label {
+.head .label {
 	flex: 1;
 	width: 100%;
 	text-transform: uppercase;
@@ -454,6 +454,7 @@ body {
 	border-radius: 10px;
 	cursor: pointer;
 	box-shadow: 0px 0px 5px #7d7d7d;
+	transition: 0.3s;
 }
 
 .hotCollections .list-item .item:hover {
@@ -526,4 +527,48 @@ body {
 
 .hotCollections .list-item .dot-box {
 	bottom: -30px;
+}
+
+.collections {
+	padding: 0 15px;
+	margin-bottom: 42px;
+}
+
+.collections .head .icon i {
+	color: #3d5059;
+}
+
+.collections .list-collections {
+	position: relative;
+}
+
+.collections .list-collections .list-item {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+	position: relative;
+
+}
+
+.collections .list-collections .list-item .item {
+	cursor: pointer;
+}
+
+.collections .list-collections .list-item img:hover {
+	border: 1px solid #c81526;
+	border-radius: 5px;
+}
+
+.collections img {
+	width: 100%;
+	height: 270px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px #7d7d7d;
+	transition: 0.3s;
+}
+
+.collections .list-collections .dot-box {
+	bottom: -40px;
 }
