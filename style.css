@@ -266,6 +266,7 @@ body {
 	height: 48px;
 	text-decoration: none!important;
 	border: 1px solid #e0e0e0;
+	transition: 0.3s;
 }
 
 .option .list-option .item .icon {
@@ -571,4 +572,12 @@ body {
 
 .collections .list-collections .dot-box {
 	bottom: -40px;
+}
+
+.collections .list-collections:hover .arrow-left-arrow {
+	opacity: 1;
+}
+
+.collections .list-collections:hover .arrow-right-arrow {
+	opacity: 1;
 }
