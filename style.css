@@ -616,3 +616,202 @@ body {
 	margin-bottom: 42px;
 }
 
+.introApp {
+	width: 100%;
+	margin-top: 60px;
+	padding: 0 70px;
+	position: relative;
+}
+
+.introApp:before {
+	content: "";
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    left: 0;
+    background: #c81526;
+}
+
+.food-pattern {
+	position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    min-height: 370px;
+}
+
+.food-pattern img {
+	width: 100%;
+	opacity: 0.05;
+}
+
+.intro-container {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.align-items-end {
+	align-items: flex-end!important;
+	display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.left-col {
+	flex: 0 0 60%;
+	position: relative;
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.right-col {
+	flex: 0 0 40%;
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content {
+	width: 100%;
+    margin-top: 5%;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content1 {
+	display: flex;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content1 i{
+	font-size: 70px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content1 .cont {
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 0.7;
+	padding-left: 20px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content2 {
+	display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content2 .item{
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+	font-size: 16px;
+	font-weight: 550;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content2 .item i {
+	margin-right: 10px;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content3 {
+	display: inline-flex;
+    flex-direction: row;
+}
+
+.introApp .intro-container .align-items-end .left-col .content .content3 img {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	margin-right: 10px;
+	border-radius: 7px;
+}
+
+.introApp .intro-container .align-items-end .right-col img {
+	margin-bottom: -3px;
+    max-width: 100%;
+    border-style: none;
+}
+/*.left-col {
+	flex: 0 0 60%;
+}
+
+.right-col {
+	flex: 0 0 40%;
+	width: 40%;
+}
+
+.introApp .intro-container .left-col .content {
+	display: flex;
+	flex-direction: column;
+}
+
+.introApp .intro-container .left-col .content .content1 {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.introApp .intro-container .left-col .content .content1 i{
+	font-size: 70px;
+}
+
+.introApp .intro-container .left-col .content .content1 .cont {
+	font-size: 24px;
+	font-weight: 550;
+	line-height: 0.7;
+	padding-left: 20px;
+}
+
+.introApp .intro-container .left-col .content .content2{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.introApp .intro-container .left-col .content .content2 .item{
+	display: flex;
+	align-items: center;
+	padding-right: 20px;
+	font-size: 16px;
+	font-weight: 550;
+}
+
+.introApp .intro-container .left-col .content .content2 .item i {
+	margin-right: 10px;
+}
+
+.introApp .intro-container .left-col .content .content3{
+	display: flex;
+	align-items: center;
+}
+
+.introApp .intro-container .left-col .content .content3 img {
+	width: 150px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.introApp .intro-container .right-col {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	right: 20px;
+	width: 40%;
+	height: 358px;
+	margin-right: 30px;
+}
+
+.introApp .intro-container .right-col img {
+	width: 100%;
+} */
