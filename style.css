@@ -1,7 +1,7 @@
 html {
 	line-height: 1.15;
 	font-size: 14px;
-	font-family: sans-serif;
+	font-family: 'Arial', sans-serif;
 	box-sizing: border-box;
 }
 
@@ -742,76 +742,120 @@ body {
     max-width: 100%;
     border-style: none;
 }
-/*.left-col {
-	flex: 0 0 60%;
+
+footer {
+	width: 100%;
+    padding: 50px 0;
+    padding-bottom: 0;
+    background: #fff;
 }
 
-.right-col {
-	flex: 0 0 40%;
-	width: 40%;
+.footer-container {
+	width: 100%;
+    padding: 15px 30px;
 }
 
-.introApp .intro-container .left-col .content {
+.footer-container .row {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
-.introApp .intro-container .left-col .content .content1 {
-	display: flex;
-	align-items: center;
+.footer-container .row .col-3 {
+	flex: 0 0 25%;
+	max-width: 25%;
+	position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer-container .row .col-3 .introduce {
 	margin-bottom: 20px;
 }
 
-.introApp .intro-container .left-col .content .content1 i{
-	font-size: 70px;
+.footer-container .row .col-3 .logo {
+	margin-bottom: 15px;
 }
 
-.introApp .intro-container .left-col .content .content1 .cont {
-	font-size: 24px;
-	font-weight: 550;
-	line-height: 0.7;
-	padding-left: 20px;
+.footer-container .row .col-3 .logo svg {
+	height: 35px;
 }
 
-.introApp .intro-container .left-col .content .content2{
-	display: flex;
+.footer-container .row .col-3 .contact {
+	display: flex!important;
 	align-items: center;
-	margin-bottom: 20px;
+	justify-content: center;
+	font-size: 1em;
+	transition: 0.25s ease;
+    padding: 0 15px;
+    margin-right: 50px;
+    border: 1px solid #c81526;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 38px;
+    font-weight: 400;
+    background: #c81526;
+    color: #fff;
 }
 
-.introApp .intro-container .left-col .content .content2 .item{
-	display: flex;
-	align-items: center;
-	padding-right: 20px;
-	font-size: 16px;
-	font-weight: 550;
+.footer-container .row .col-3 .contact:hover {
+	background: #fff;
+    color: #c81526;
 }
 
-.introApp .intro-container .left-col .content .content2 .item i {
+.footer-container .row .col-3 .contact i {
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.contact-item {
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.contact-item .content {
+	flex: 1;
+    line-height: 1.5em;
+}
+
+.contact-item .icon {
 	margin-right: 10px;
 }
 
-.introApp .intro-container .left-col .content .content3{
+.footer-container .row .col {
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+}
+
+.bg-light {
+	background-color: #f7f7f7;
+	margin-top:30px;
+	padding: 20px 30px;
+}
+
+.bg-light .company-info {
+	font-size: 0.8em;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	color: rgba(61, 80, 89, 0.7);
 }
 
-.introApp .intro-container .left-col .content .content3 img {
-	width: 150px;
-	height: 60px;
+.bg-light .company-info .info {
+	line-height: 1.8;
+}
+
+.bg-light .company-info .iconRegister img {
+	height: 50px;
 	cursor: pointer;
 }
-
-.introApp .intro-container .right-col {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	right: 20px;
-	width: 40%;
-	height: 358px;
-	margin-right: 30px;
-}
-
-.introApp .intro-container .right-col img {
-	width: 100%;
-} */
